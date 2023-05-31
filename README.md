@@ -20,7 +20,7 @@ Prerequisites (Optional in example2):
     }
 
     module "cloudfront_s3_website_with_domain" {
-        source                 = "gokulchuk/terraform-aws-s3-cloudfront-website/"
+        source                 = "MlPADI/s3-cloudfront-website/aws"
         version                = "1.2.2"
         hosted_zone            = "demo.com" 
         domain_name            = "demo.abc.test.com"
@@ -31,9 +31,9 @@ Prerequisites (Optional in example2):
 ### Example 2
 
     module "cloudfront_s3_website_without_domain" {
-        source                 = "gokulchuk/terraform-aws-s3-cloudfront-website/"
+        source                 = "MlPADI/s3-cloudfront-website/aws"
         version                = "1.2.2"
-        domain_name            = "demo-application-1232" // Any random identifier for s3 bucket name
+        domain_name            = "demo-chukku-bucket" // Any random identifier for s3 bucket name
         use_default_domain     = true
         upload_sample_file     = true
     }
